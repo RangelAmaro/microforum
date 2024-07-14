@@ -8,11 +8,12 @@ if ($conn->connect_error) {
 }
 
 // função para inserir um comentário no banco
-function inserirComentario($comentario) {
+function inserirComentario($comentario)
+{
     global $conn;
-    
+
     $sql = "INSERT INTO comentarios (comentario, data_hora) VALUES ('$comentario', NOW())";
-    
+
     if ($conn->query($sql) === TRUE) {
         return true;
     } else {
@@ -48,14 +49,18 @@ $result = $conn->query($sql);
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <?php include 'blocos-html/head-inicio.html'; ?>
 </head>
+
 <body>
-    <?php include 'blocos-html/header-site.html'; ?>
-    <?php include 'blocos-html/fala.html'; ?>
-    <!-- ?php include 'blocos-html/pop-up-boas-vindas.html'; ? --->
-    <?php include 'blocos-html/posts.html'; ?>
+    <main>
+        <?php include 'blocos-html/header-site.html'; ?>
+        <?php include 'blocos-html/fala.html'; ?>
+        <!-- ?php include 'blocos-html/pop-up-boas-vindas.html'; ? --->
+        <?php include 'blocos-html/posts.html'; ?>
+    </main>
 </body>
 <footer class="footer">
     <?php include 'blocos-html/footer-site.html'; ?>

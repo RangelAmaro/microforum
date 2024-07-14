@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "senha";
-$dbname = "nome-banco de dados";
+$password = "";
+$dbname = "microforum";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

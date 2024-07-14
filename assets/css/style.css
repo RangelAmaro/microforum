@@ -16,6 +16,13 @@ body{
     min-height: 100vh;
 }
 
+main{
+    max-width: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .logo-header{
     margin: 0;
     width: 100%;
