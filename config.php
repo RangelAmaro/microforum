@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "microforum";
+$username = "u693436268_redesocial";
+$password = "JU;=3n^1s~7o";
+$dbname = "u693436268_redesocial";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
